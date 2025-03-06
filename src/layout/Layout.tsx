@@ -1,17 +1,17 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Footer from "../components/Footer/Footer";
+import Nav from "../components/Nav/Nav";
 
 const Layout = () => {
 	const loation = useLocation();
 
 	console.log(loation);
-	const hideFooter = loation.pathname === "/";
+	const hideNav = loation.pathname === "/";
 
 	return (
 		<>
 			<div>
 				<Outlet />
-				{!hideFooter && <Footer />}
+				{!hideNav && <Nav />}
 			</div>
 		</>
 	);
