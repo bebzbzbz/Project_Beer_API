@@ -5,6 +5,11 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 import "./App.css";
+import Layout from "./layout/Layout";
+import Start from "./pages/Start/Start";
+import AllBeers from "./pages/AllBeers/AllBeers";
+import BeerDetails from "./pages/BeerDetails/BeerDetails";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 	const router = createBrowserRouter(
