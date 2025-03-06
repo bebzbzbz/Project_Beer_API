@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Nav = () => {
     return (  
-        <nav className="w-full bg-amber-300 text-center p-2 fixed bottom-0">
+        <nav className="w-full bg-amber-400 text-center p-2 fixed bottom-0">
             <Link to="/" className="inline-block bg-white rounded-full p-2">
                 <img src="/logo.svg" alt="Two beer pints clicking together" />
             </Link>
@@ -10,4 +10,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default Nav;
