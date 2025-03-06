@@ -19,7 +19,7 @@ const StartCard: React.FunctionComponent<Props> = ({ imgName, linkName }) => {
 					className='bg-amber-300 text-4xl text-white py-2 px-4
                 '
 				>
-					<Link to={""}>{linkName}</Link>
+					<Link to={"/allbeers"}>{linkName}</Link>
 				</p>
 				<p className='text-base mt-4 font-bold'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
