@@ -15,7 +15,7 @@ const StartCard: React.FunctionComponent<Props> = ({
 		<>
 			<div className='mx-8 my-10'>
 				<img
-					src={`../../../public/${imgName}.jpg`}
+					src={`../../../public/${imgName}.svg`}
 					alt='shelf full of alcohol bottles'
 					className='w-screen object-contain
                     '

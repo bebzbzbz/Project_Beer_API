@@ -19,10 +19,10 @@ const Start = () => {
 
 	return (
 		<>
-			<StartCard imgName={"shelf"} linkName={"All Beers"} linkTo='/allbeers' />
+			<StartCard imgName={"shelf1"} linkName={"All Beers"} linkTo='/allbeers' />
 
 			<StartCard
-				imgName='glasses'
+				imgName='glasses1'
 				linkName='Random Beer'
 				linkTo={`/allbeers/${beer?._id}`}
 			/>

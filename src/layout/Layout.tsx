@@ -9,7 +9,7 @@ const Layout = () => {
 
 	return (
 		<>
-			<div className="px-10 pt-10 pb-35">
+			<div className='px-10 pt-10 pb-35 font-[RobotoSlab]'>
 				<Outlet />
 			</div>
 			{!hideNav && <Nav />}
