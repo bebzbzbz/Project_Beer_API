@@ -9,10 +9,10 @@ const Layout = () => {
 
 	return (
 		<>
-			<div>
+			<div className="px-10 pt-10 pb-35">
 				<Outlet />
-				{!hideNav && <Nav />}
 			</div>
+			{!hideNav && <Nav />}
 		</>
 	);
 };
