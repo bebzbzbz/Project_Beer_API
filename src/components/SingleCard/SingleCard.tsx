@@ -35,6 +35,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 					<Link
 						to={`/allbeers/${beer._id}`}
 						className='bg-amber-400 rounded-3xl text-white font-medium py-2 px-6 hover:bg-amber-500 hover:scale-110 transition-all'
+						title={`View Details about ${beer.name}`}
 					>
 						Details
 					</Link>

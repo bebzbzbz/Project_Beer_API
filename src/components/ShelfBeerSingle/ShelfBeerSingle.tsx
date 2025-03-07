@@ -7,7 +7,7 @@ interface ShelfBeerSingleProps {
 
 const ShelfBeerSingle = ({beer} : ShelfBeerSingleProps) => {
     return (  
-        <Link to={`/allbeers/${beer._id}`}>
+        <Link to={`/allbeers/${beer._id}`} title={beer.name}>
             <img src={beer.image_url} alt={beer.name} className="hover:rotate-5 transition-transform"/>
         </Link>
     );
