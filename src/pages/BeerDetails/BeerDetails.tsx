@@ -29,8 +29,12 @@ const BeerDetails = () => {
 	}, []);
 
 	return (
-		<div className='md:flex items-center gap-10'>
-			<img src={beer?.image_url} alt={beer?.name} className="rounded-3xl"/>
+		<div className='flex flex-col md:flex md:items-center gap-10'>
+			<img
+				src={beer?.image_url}
+				alt={beer?.name}
+				className='rounded-3xl md:w-1/2'
+			/>
 
 			<div>
 				<div className='font-medium my-10'>
@@ -51,13 +55,11 @@ const BeerDetails = () => {
 					<p>{beer?.description}</p>
 				</div>
 
-				<div className="flex gap-8 items-center">
-					<ArrowBtn/>
-					<LikeBtn onLike={() => onLike(id)} isLiked={isLiked(beer?._id)}/>
+				<div className='flex gap-8 items-center'>
+					<ArrowBtn />
+					<LikeBtn onLike={() => onLike(id)} isLiked={isLiked(beer?._id)} />
 				</div>
 			</div>
-			
-
 		</div>
 	);
 };
