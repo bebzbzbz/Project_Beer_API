@@ -16,7 +16,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 	return (
 		<div
 			className='flex ml-8 mr-10
-		  items-center gap-8 py-10 border-b-1'
+		items-center gap-8 py-10 border-b-1'
 		>
 			<div className='w-1/2'>
 				<img
