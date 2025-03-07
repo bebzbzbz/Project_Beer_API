@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IBeer } from "../../interfaces/IBeer";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import LikeBtn from "../LikeBtn/LikeBtn";
 
 interface BeerProps {
 	beer: IBeer;
@@ -25,20 +26,20 @@ const SingleCard = ({ beer }: BeerProps) => {
 			</div>
 			<div>
 				<h1 className='text-3xl text-wrap'>{beer.name}</h1>
-				<p className='text-lg text-wrap text-amber-300 font-black'>
+				<p className='text-lg text-wrap text-amber-400 font-black'>
 					{beer.tagline}
 				</p>
 				<p className='text-base my-5'>Created by: {beer.name}</p>
-				<Link
-					to={`/allbeers/${beer._id}`}
-					className='bg-amber-300 rounded-3xl text-white font-medium py-2 px-6'
-				>
-					Details
-				</Link>
-				{/* hier noch ein Button zum Liken */}
-				<button onClick={() => onLike(beer._id)}>
-					{isLiked(beer?._id) ? "dont like anymore" : "like"}
-				</button>
+				<div className="flex gap-4 items-center">
+					<Link
+						to={`/allbeers/${beer._id}`}
+						className='bg-amber-400 rounded-3xl text-white font-medium py-2 px-6 hover:bg-amber-500 hover:scale-110 transition-all'
+					>
+						Details
+					</Link>
+					{/* hier noch ein Button zum Liken */}
+					<LikeBtn onLike={() => onLike(beer._id)} isLiked={isLiked(beer?._id)}/>
+				</div>
 			</div>
 		</div>
 	);
