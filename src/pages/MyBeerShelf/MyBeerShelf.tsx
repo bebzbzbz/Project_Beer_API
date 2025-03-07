@@ -3,6 +3,7 @@ import { IBeer } from "../../interfaces/IBeer";
 import axios from "axios";
 import ShelfBeerSingle from "../../components/ShelfBeerSingle/ShelfBeerSingle";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import ArrowBtn from "../../components/ArrowBtn/ArrowBtn";
 
 const MyBeerShelf = () => {
     const [beers, setBeers] = useState<IBeer[]>([]);
@@ -28,11 +29,12 @@ const MyBeerShelf = () => {
                 <h1 className="text-3xl">My Beer Shelf</h1>
                 <img src="/beer-full.png" alt="Full beer glass" className="h-10"/>
             </div>
-            <section className="grid grid-cols-4 gap-5">
+            <section className="grid grid-cols-4 gap-5 mb-10">
                 {favedBeers.map((beer: IBeer) => {
                     return <ShelfBeerSingle beer={beer} key={beer._id} />
                 })}
             </section>
+            <ArrowBtn/>
         </>
     );
 }

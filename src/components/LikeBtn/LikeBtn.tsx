@@ -7,7 +7,7 @@ interface LikeBtnProps {
 
 const LikeBtn = ({isLiked, onLike}: LikeBtnProps) => {
     return (  
-        <Link to="" onClick={onLike}>
+        <Link to="" onClick={onLike} title={isLiked ? "Remove from Beer Shelf" : "Add to Beer Shelf"}>
             {isLiked 
                 ? <img src="/beer-full.png" alt="Don't like anymore" className="h-10 hover:scale-110 transition-all hover:rotate-10"/>
                 : <img src="/beer-empty.png" alt="Don't like anymore"

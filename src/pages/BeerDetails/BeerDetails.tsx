@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import useLocalStorage from "../../hooks/useLocalStorage";
 import LikeBtn from "../../components/LikeBtn/LikeBtn";
+import ArrowBtn from "../../components/ArrowBtn/ArrowBtn";
 
 // interface BeerDetailsProps {
 // 	beer: IBeer;
@@ -50,13 +51,7 @@ const BeerDetails = () => {
 			</div>
 
 			<div className="flex gap-8 items-center">
-				<Link
-					to='/allbeers'
-					className='inline-block bg-amber-400 rounded-full p-2 self-start hover:scale-110 hover:bg-amber-500 transition-all'
-				>
-					<img src='/arrow.svg' alt='Arrow back' />
-				</Link>
-
+				<ArrowBtn/>
 				<LikeBtn onLike={() => onLike(id)} isLiked={isLiked(beer?._id)}/>
 			</div>
 

@@ -14,8 +14,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 	//Rerndern der einzelnen Kartendarstellung mit HTML und Tailwind
 	//über beer wird auf die Daten der APi zugegriffen
 	return (
-		<div
-			className='sm:flex ml-8 mr-10
+		<div className='sm:flex ml-8 mr-10
 		  items-center gap-8 py-10 border-b-1 md:flex'
 		>
 			<div className='w-full md:w-1/2 '>
@@ -35,6 +34,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 					<Link
 						to={`/allbeers/${beer._id}`}
 						className='bg-amber-400 rounded-3xl text-white font-medium py-2 px-6 hover:bg-amber-500 hover:scale-110 transition-all'
+						title={`View Details about ${beer.name}`}
 					>
 						Details
 					</Link>
