@@ -1,6 +1,6 @@
 # 🍻 Projekt-Beer-API 🍻
 
-[Macbook-Air-localhost-7good1qor7byy6.webm](https://github.com/user-attachments/assets/b0cbd2f3-701a-49d1-a104-3b1f1744d2f2)
+
 
 
 ## 🍺 Inhaltliches
@@ -12,6 +12,8 @@ Hierbei werden zum einen die von der **API** aufgeführten Biersorten dargestell
 Auch ist es möglich durch den Bier-Button das Lieblingsbier zu speichern und über einen Button, der rechts oben auf den Seiten sichtbar ist zu navigieren.
 
 ## 🍺 Video
+
+[Macbook-Air-localhost-7good1qor7byy6.webm](https://github.com/user-attachments/assets/b0cbd2f3-701a-49d1-a104-3b1f1744d2f2)
 
 ### 🍺 Tech Stack 💻
 
