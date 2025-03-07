@@ -21,7 +21,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 				<img
 					src={beer.image_url}
 					alt={`Image form ${beer.name}`}
-					className='mb-4 md:mb-0'
+					className='mb-4 md:mb-0 rounded-full'
 				/>
 			</div>
 			<div>

@@ -26,7 +26,7 @@ const Start = () => {
 	}, []);
 
 	return (
-		<>
+		<div className="md:flex">
 			{/* Die Start Komponente wird jeweils für die dafür vorhergesehene Funktion aufgerufen mit den dazugehörigen Props, wie der BildName, der LinkName wo es beim drauf klicken weiter gehen soll und dem path-Namen */}
 			<StartCard imgName={"shelf1"} linkName={"All Beers"} linkTo='/allbeers' />
 
@@ -35,7 +35,7 @@ const Start = () => {
 				linkName='Random Beer'
 				linkTo={`/allbeers/${beer?._id}`}
 			/>
-		</>
+		</div>
 	);
 };
 

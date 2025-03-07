@@ -18,15 +18,16 @@ const StartCard: React.FunctionComponent<Props> = ({
 	return (
 		<>
 			<div className='mx-8 my-10'>
-				<img
-					src={`../../../public/${imgName}.svg`}
-					alt='shelf full of alcohol bottles'
-					className='w-screen object-contain
-                    '
-				/>
-				<p className='bg-amber-300 text-4xl text-white py-2 px-4'>
-					<Link to={linkTo}>{linkName}</Link>
-				</p>
+				<div className="rounded-3xl overflow-hidden">
+					<img
+						src={`../../../public/${imgName}.svg`}
+						alt='shelf full of alcohol bottles'
+						className='w-screen object-contain
+						'
+					/>
+					<Link to={linkTo} className='block w-full bg-amber-400 text-4xl text-white py-2 px-4 hover:bg-amber-500 transition-colors'>{linkName}</Link>
+				</div>
+				
 				<p className='text-base mt-4 font-bold'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
 					similique quos id quo explicabo ducimus perspiciatis exercitationem
