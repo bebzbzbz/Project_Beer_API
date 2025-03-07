@@ -3,6 +3,7 @@ import { IBeer } from "../../interfaces/IBeer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import LikeBtn from "../../components/LikeBtn/LikeBtn";
 
 // interface BeerDetailsProps {
 // 	beer: IBeer;
@@ -48,17 +49,17 @@ const BeerDetails = () => {
 				<p>{beer?.description}</p>
 			</div>
 
-			{/* hier noch ein Button zum Liken */}
-			<button onClick={() => onLike(id)}>
-				{isLiked(beer?._id) ? "dont like anymore" : "like"}
-			</button>
+			<div className="flex gap-8 items-center">
+				<Link
+					to='/allbeers'
+					className='inline-block bg-amber-400 rounded-full p-2 self-start hover:scale-110 hover:bg-amber-500 transition-all'
+				>
+					<img src='/arrow.svg' alt='Arrow back' />
+				</Link>
 
-			<Link
-				to='/allbeers'
-				className='inline-block bg-amber-400 rounded-full p-2 self-start hover:scale-110 hover:bg-amber-500 transition-all'
-			>
-				<img src='/arrow.svg' alt='Arrow back' />
-			</Link>
+				<LikeBtn onLike={() => onLike(id)} isLiked={isLiked(beer?._id)}/>
+			</div>
+
 		</div>
 	);
 };
