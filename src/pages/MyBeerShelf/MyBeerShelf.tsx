@@ -29,7 +29,7 @@ const MyBeerShelf = () => {
                 <h1 className="text-3xl">My Beer Shelf</h1>
                 <img src="/beer-full.png" alt="Full beer glass" className="h-10"/>
             </div>
-            <section className="grid grid-cols-4 gap-5 mb-10">
+            <section className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mb-10">
                 {favedBeers.map((beer: IBeer) => {
                     return <ShelfBeerSingle beer={beer} key={beer._id} />
                 })}

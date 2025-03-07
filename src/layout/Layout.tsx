@@ -11,7 +11,7 @@ const Layout = () => {
 
 	return (
 		<>
-			<div className='px-10 pt-10 pb-35 font-[RobotoSlab]'>
+			<div className={`px-8 py-8 font-[RobotoSlab] ${!hideNav && "pb-35"}`}>
 				<Outlet />
 				{!hideShelfBtn && <ShelfBtn/>}
 			</div>
