@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import { IBeer } from "../../interfaces/IBeer";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 interface BeerProps {
 	beer: IBeer;
 }
 
 const SingleCard = ({ beer }: BeerProps) => {
+	//anwenden der eigneen hook
+	//likes ist array mit den ids der gelikeden bieren
+	const { isLiked, onLike } = useLocalStorage();
+
 	return (
 		<div
 			className='flex ml-8 mr-10
@@ -30,6 +35,10 @@ const SingleCard = ({ beer }: BeerProps) => {
 				>
 					Details
 				</Link>
+				{/* hier noch ein Button zum Liken */}
+				<button onClick={() => onLike(beer._id)}>
+					{isLiked(beer?._id) ? "dont like anymore" : "like"}
+				</button>
 			</div>
 		</div>
 	);
