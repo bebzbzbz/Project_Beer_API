@@ -6,12 +6,13 @@ import LikeBtn from "../LikeBtn/LikeBtn";
 interface BeerProps {
 	beer: IBeer;
 }
-
+//Beginn der Componente mit BeerProps
 const SingleCard = ({ beer }: BeerProps) => {
-	//anwenden der eigneen hook
+	//anwenden der eigenen hook
 	//likes ist array mit den ids der gelikeden bieren
 	const { isLiked, onLike } = useLocalStorage();
-
+	//Rerndern der einzelnen Kartendarstellung mit HTML und Tailwind
+	//über beer wird auf die Daten der APi zugegriffen
 	return (
 		<div
 			className='flex ml-8 mr-10
@@ -30,7 +31,7 @@ const SingleCard = ({ beer }: BeerProps) => {
 					{beer.tagline}
 				</p>
 				<p className='text-base my-5'>Created by: {beer.name}</p>
-				<div className="flex gap-4 items-center">
+				<div className='flex gap-4 items-center'>
 					<Link
 						to={`/allbeers/${beer._id}`}
 						className='bg-amber-400 rounded-3xl text-white font-medium py-2 px-6 hover:bg-amber-500 hover:scale-110 transition-all'
@@ -38,7 +39,10 @@ const SingleCard = ({ beer }: BeerProps) => {
 						Details
 					</Link>
 					{/* hier noch ein Button zum Liken */}
-					<LikeBtn onLike={() => onLike(beer._id)} isLiked={isLiked(beer?._id)}/>
+					<LikeBtn
+						onLike={() => onLike(beer._id)}
+						isLiked={isLiked(beer?._id)}
+					/>
 				</div>
 			</div>
 		</div>

@@ -4,8 +4,11 @@ import axios from "axios";
 import SingleCard from "../../components/SingleCard/SingleCard";
 
 const AllBeers = () => {
+	//useState zum speichern der geholten Daten
 	const [beers, setBeers] = useState<IBeer[]>([]);
 
+	// ! für die auflistung der gesamten Biere der API
+	//UseEffet zum fetchen der API, damit diese nur wieder gefetched wird, sobald sich etwas im dependency verändert hat.
 	useEffect(() => {
 		const fetchData = async () => {
 			const response = await axios.get(
@@ -16,7 +19,7 @@ const AllBeers = () => {
 		};
 		fetchData();
 	}, []);
-
+	//rendern der API-Daten über map, welche durch die Komponente SingleCard dargestellt wird.
 	return (
 		<>
 			<div>
