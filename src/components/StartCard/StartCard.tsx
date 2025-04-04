@@ -5,6 +5,7 @@ interface Props {
 	imgName: string;
 	linkName: string;
 	linkTo: string;
+	title: string;
 }
 
 // Beginn der Componente, welcher Props mitgegeben werden zur weiteren Verwendung.
@@ -12,29 +13,24 @@ const StartCard: React.FunctionComponent<Props> = ({
 	imgName,
 	linkName,
 	linkTo,
+	title
 }) => {
 	// Rendern der StartKarte mit HTML und Tailwind.
 	// in den {}-Klammern befinden sich die jeweiligen Props, damit die Component mehrfach verwendet werden kann.
 	return (
 		<>
-			<div className='mx-8 my-10'>
-				<div className="rounded-3xl overflow-hidden">
+			<Link to={linkTo} className="bg-amber-400 hover:bg-amber-500 transition-colors rounded-3xl overflow-hidden w-full" title={title}>
+				<div className="relative">
 					<img
 						src={`/${imgName}.svg`}
 						alt='shelf full of alcohol bottles'
-						className='w-screen object-contain
-						'
+						className='w-full object-contain'
 					/>
-					<Link to={linkTo} className='block w-full bg-amber-400 text-4xl text-white py-2 px-4 hover:bg-amber-500 transition-colors'>{linkName}</Link>
+					<div className="bg-amber-500 opacity-30 absolute top-0 left-0 right-0 bottom-0 hover:opacity-0 transition"></div>
 				</div>
-				
-				<p className='text-base mt-4 font-bold'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-					similique quos id quo explicabo ducimus perspiciatis exercitationem
-					voluptatibus quae, consectetur nam modi sequi mollitia voluptatem!
-					Magni consectetur exercitationem illo id?
-				</p>
-			</div>
+				<p className='block w-full text-4xl text-white py-2 px-4'>{linkName}</p>
+			</Link>
+			
 		</>
 	);
 };

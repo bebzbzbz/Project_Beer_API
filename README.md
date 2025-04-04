@@ -1,5 +1,7 @@
 # 🍻 Project Beer API 🍻
 
+This project was created as an app to showcase a variety of beers using the Beer API using React.js and TypeScript. 
+
 [Macbook-Air-localhost-7good1qor7byy6.webm](https://github.com/user-attachments/assets/b0cbd2f3-701a-49d1-a104-3b1f1744d2f2)
 
 ## Table of Contents 📑
@@ -24,7 +26,8 @@
 **Markup:**  
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
 **Styling:**  
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 **Library:**  
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
 **Programming language:**  
@@ -56,4 +59,5 @@ You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title
 ## Future Possibilities
 
 <ul>
+    <li></li>
 </ul>

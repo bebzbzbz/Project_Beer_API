@@ -26,14 +26,19 @@ const Start = () => {
 	}, []);
 
 	return (
-		<div className="md:flex">
+		<div className="h-full flex flex-col md:flex-row items-center gap-6 px-5">
 			{/* Die Start Komponente wird jeweils für die dafür vorhergesehene Funktion aufgerufen mit den dazugehörigen Props, wie der BildName, der LinkName wo es beim drauf klicken weiter gehen soll und dem path-Namen */}
-			<StartCard imgName={"shelf1"} linkName={"All Beers"} linkTo='/allbeers' />
+			<StartCard 
+				imgName={"shelf1"} 
+				linkName={"All Beers"} 
+				linkTo='/allbeers' 
+				title="Browse all beers"/>
 
 			<StartCard
 				imgName='glasses1'
 				linkName='Random Beer'
 				linkTo={`/allbeers/${beer?._id}`}
+				title="Give me a random beer"
 			/>
 		</div>
 	);

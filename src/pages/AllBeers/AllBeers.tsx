@@ -22,7 +22,7 @@ const AllBeers = () => {
 	//rendern der API-Daten über map, welche durch die Komponente SingleCard dargestellt wird.
 	return (
 		<>
-			<div>
+			<div className="md:grid grid-cols-2 gap-5">
 				{beers.map((beer: IBeer) => {
 					return <SingleCard beer={beer} key={beer._id} />;
 				})}

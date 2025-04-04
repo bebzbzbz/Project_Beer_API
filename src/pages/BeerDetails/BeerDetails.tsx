@@ -29,11 +29,11 @@ const BeerDetails = () => {
 	}, []);
 
 	return (
-		<div className='flex flex-col md:flex md:items-center gap-10'>
+		<div className='md:grid grid-cols-2 md:items-center gap-10'>
 			<img
 				src={beer?.image_url}
 				alt={beer?.name}
-				className='rounded-3xl md:w-1/2'
+				className='rounded-3xl'
 			/>
 
 			<div>
