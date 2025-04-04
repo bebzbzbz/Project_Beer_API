@@ -9,7 +9,6 @@ This project was created as an app to showcase a variety of beers using the Beer
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation & Setup](#installation-&-setup)
-- [Future Possibilities](#future-possibilities)
 
 ## Features
 <ul>
@@ -27,7 +26,7 @@ This project was created as an app to showcase a variety of beers using the Beer
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
 **Styling:**  
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  
 **Library:**  
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
 **Programming language:**  
@@ -54,10 +53,4 @@ You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title
    npm run dev
    ```
 
-3. **Open your local host and enjoy! 🍻**
-
-## Future Possibilities
-
-<ul>
-    <li></li>
-</ul>
+3. **Open your local host and enjoy! 🍻** 
