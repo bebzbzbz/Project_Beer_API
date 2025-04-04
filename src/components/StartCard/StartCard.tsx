@@ -20,7 +20,7 @@ const StartCard: React.FunctionComponent<Props> = ({
 			<div className='mx-8 my-10'>
 				<div className="rounded-3xl overflow-hidden">
 					<img
-						src={`../../../public/${imgName}.svg`}
+						src={`/${imgName}.svg`}
 						alt='shelf full of alcohol bottles'
 						className='w-screen object-contain
 						'
