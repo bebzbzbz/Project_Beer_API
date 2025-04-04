@@ -1,10 +1,4 @@
-# 🍻 Projekt-Beer-API 🍻
-
-Bei dem Project wird unter Verwendung einer Bier**API** eine Homepage zu dem Thema Bier entworfen.
-
-Hierbei werden zum einen die von der **API** aufgeführten Biersorten dargestellt. Auch gibt es die Möglichkeit sich eine Detailansicht einer zufällig ausgewählten Bieres anzeigen zu lassen.
-
-Auch ist es möglich durch den Bier-Button das Lieblingsbier zu speichern und über einen Button, der rechts oben auf den Seiten sichtbar ist zu navigieren.
+# 🍻 Project Beer API 🍻
 
 [Macbook-Air-localhost-7good1qor7byy6.webm](https://github.com/user-attachments/assets/b0cbd2f3-701a-49d1-a104-3b1f1744d2f2)
 
@@ -16,25 +10,14 @@ Auch ist es möglich durch den Bier-Button das Lieblingsbier zu speichern und ü
 - [Future Possibilities](#future-possibilities)
 
 ## Features
-<div style="display: flex; flex-direction: row; justify-content: center;">
-    <img src="./public/img/notice-screen.png">
-    <ul style="height: 300px">
-        <li>Buttons with hover effects as user feedback</li>
-        <li>Randomised CPU choices</li>
-        <li>Infinite game with score tracking for user and CPU</li>
-        <li>Restart game option</li>
-        <li>Responsive layout optimised for different screens</li>
-        <li>Screen notice for user to flip device when in portrait mode</li>
-        <li>Classic game rules
-            <ul>
-                <li>Rock beats Scissors</li>
-                <li>Scissors beat Paper</li>
-                <li>Paper beats Rock</li>
-                <li>If the choices are same, it's a draw</li>
-            </ul>
-        </li>
-    </ul>
-</div>
+<ul>
+    <li>Buttons with hover effects as user feedback</li>
+    <li>A list of all beers provided by the Beer API</li>
+    <li>Option to open a randomised beer</li>
+    <li>Detail page of each beer</li>
+    <li>Save and unsave your favourite beer with the beer icon</li>
+    <li>Navigate to the My Beer Shelf page and see all saved beers</li>
+</ul>
 
 ## Tech Stack
 
@@ -59,7 +42,7 @@ You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/bebzbzbz/Rock-Paper-Scissors-Game.git
+   git clone https://github.com/bebzbzbz/Project_Beer_API.git
    ```
 
 2. **Install dependencies & run the development server:**
@@ -68,7 +51,7 @@ You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title
    npm run dev
    ```
 
-3. **Open your local host and play! 🕹️**
+3. **Open your local host and enjoy! 🍻**
 
 ## Future Possibilities
 
