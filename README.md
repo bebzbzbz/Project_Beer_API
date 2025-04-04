@@ -1,37 +1,76 @@
 # 🍻 Projekt-Beer-API 🍻
 
-
-
-
-## 🍺 Inhaltliches
-
 Bei dem Project wird unter Verwendung einer Bier**API** eine Homepage zu dem Thema Bier entworfen.
 
 Hierbei werden zum einen die von der **API** aufgeführten Biersorten dargestellt. Auch gibt es die Möglichkeit sich eine Detailansicht einer zufällig ausgewählten Bieres anzeigen zu lassen.
 
 Auch ist es möglich durch den Bier-Button das Lieblingsbier zu speichern und über einen Button, der rechts oben auf den Seiten sichtbar ist zu navigieren.
 
-## 🍺 Video
-
 [Macbook-Air-localhost-7good1qor7byy6.webm](https://github.com/user-attachments/assets/b0cbd2f3-701a-49d1-a104-3b1f1744d2f2)
 
-### 🍺 Tech Stack 💻
+## Table of Contents 📑
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation-&-setup)
+- [Future Possibilities](#future-possibilities)
+
+## Features
+<div style="display: flex; flex-direction: row; justify-content: center;">
+    <img src="./public/img/notice-screen.png">
+    <ul style="height: 300px">
+        <li>Buttons with hover effects as user feedback</li>
+        <li>Randomised CPU choices</li>
+        <li>Infinite game with score tracking for user and CPU</li>
+        <li>Restart game option</li>
+        <li>Responsive layout optimised for different screens</li>
+        <li>Screen notice for user to flip device when in portrait mode</li>
+        <li>Classic game rules
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beat Paper</li>
+                <li>Paper beats Rock</li>
+                <li>If the choices are same, it's a draw</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+## Tech Stack
 
 **Markup:**  
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-
-**Styling:**<br/>
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
+**Styling:**  
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
+**Library:**  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+**Programming language:**  
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)  
+**Design:**  
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)  
 **IDE:**  
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-**TS:**<br/>
-![Javascript](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
-
-**Library**<br/>
-![React](https://img.shields.io/badge/React-61DAFB?logo=React&logoColor=black&style=flat-square)
-
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 **Version Control:**  
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
+
+## Installation & Setup
+
+You can play the game <a href="https://bz-rock-paper-scissors.vercel.app/" title="Play game in browser">here</a> in your local browser. To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bebzbzbz/Rock-Paper-Scissors-Game.git
+   ```
+
+2. **Install dependencies & run the development server:**
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+3. **Open your local host and play! 🕹️**
+
+## Future Possibilities
+
+<ul>
+</ul>

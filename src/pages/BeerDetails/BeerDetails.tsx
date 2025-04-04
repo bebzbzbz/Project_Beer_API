@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { IBeer } from "../../interfaces/IBeer";
 import { useEffect, useState } from "react";
 import axios from "axios";
