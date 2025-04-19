@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 //anlegen der Props für die Componenten übergreifende Verwendung auf der StartSeite
 interface Props {
 	imgName: string;
+	altText: string;
 	linkName: string;
 	linkTo: string;
 	title: string;
@@ -11,6 +12,7 @@ interface Props {
 // Beginn der Componente, welcher Props mitgegeben werden zur weiteren Verwendung.
 const StartCard: React.FunctionComponent<Props> = ({
 	imgName,
+	altText,
 	linkName,
 	linkTo,
 	title
@@ -20,11 +22,11 @@ const StartCard: React.FunctionComponent<Props> = ({
 	return (
 		<>
 			<Link to={linkTo} className="bg-amber-400 hover:bg-amber-500 transition-colors rounded-3xl overflow-hidden w-full" title={title}>
-				<div className="relative">
+				<div className="relative flex">
 					<img
-						src={`/${imgName}.svg`}
-						alt='shelf full of alcohol bottles'
-						className='w-full object-contain'
+						src={`/${imgName}.jpg`}
+						alt={altText}
+						className='w-full h-100 lg:h-130 object-cover object-center'
 					/>
 					<div className="bg-amber-500 opacity-30 absolute top-0 left-0 right-0 bottom-0 hover:opacity-0 transition"></div>
 				</div>
